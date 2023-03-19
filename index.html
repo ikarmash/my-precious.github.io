@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Главная страница</title>
+</head>
+
+<body>
+    <div class="all">
+        <header class="header">
+            <a href="#" class="logo__img"><img src="img/logo.svg" alt="Логотип"></a>
+            <nav>
+                <ul class="menu">
+                    <li class="menu__item menu__item__active"><a href="index.html"
+                            class="menu__item__link menu__link__active">Главная</a></li>
+                    <li class="menu__item"><a href="students.html" class="menu__item__link">Студенты</a></li>
+                    <li class="menu__item"><a href="about.html" class="menu__item__link">О курсе</a></li>
+                    <li class="menu__item"><a href="contacts.html" class="menu__item__link">Контакты</a></li>
+                </ul>
+            </nav>
+            <a href="#" class="button">Войти</a>
+        </header>
+        <main class="section">
+            <h1 class="main__header">Добро пожаловать на курс “Создание веб-сайтов (HTML, CSS)”!</h1>
+            <img src="img/main-photo.jpg" alt="Главное фото" class="main__photo">
+            <div class="main__content">
+                <div class="article">
+                    <div class="article__block">
+                        <h3 class="subtitle__head">Для кого этот курс</h3>
+                        <p class="subtitle__text">Этот курс рассчитан на новичков, которые только начинают знакомство с
+                            веб-разработкой. В начале курса вы
+                            узнаете о том, как устроен Интернет и веб-сайты.</p>
+                        <p class="subtitle__text">Для обучения необходимо только владеть компьютерной грамотностью
+                            (пользоваться браузером,
+                            создавать
+                            папки и файлы, устанавливать программы).</p>
+                    </div>
+                    <div class="article__block article__block__bottom">
+                        <h3 class="subtitle__head">Чему вы научитесь</h3>
+                        <p class="subtitle__text">На этом курсе вы узнаете, как устроены веб-сайты и как создавать их с
+                            нуля.
+                            Изучите основы языков <b>HTML</b>, <b>CSS</b> и немного <b>JavaScript</b>. Мы вместе
+                            сверстаем
+                            сайт
+                            нашей группы по
+                            этому
+                            макету. А затем вы <span class="sub__text__span">сами</span> сверстаете свои личные
+                            странички в
+                            качестве домашнего задания и мы
+                            выложим
+                            все это на сервер.</p>
+                    </div>
+                </div>
+                <h2 class="section__content"><span class="content__quote content__quote__left">“</span> Учимся вместе!
+                    <span class="content__quote content__quote__right">”</span>
+                </h2>
+            </div>
+        </main>
+    </div>
+    <div class="pop__up">
+        <h4 class="popup__heading">Войти на сайт</h4>
+        <form action="#" method="POST" class="popup__form">
+            <input type="text" name="login" id="login" placeholder="Логин" class="popup__field"><br>
+            <input type="password" name="password" id="password" placeholder="Пароль" class="popup__field"><br>
+            <button type="submit" class="popup__button">Войти</button>
+        </form>
+    </div>
+    <footer class="footer">
+        <p class="footer__text">2023 &#169; <a href="https://learn.innopolis.university/" class="footer__link">учебный
+                центр</a></p>
+    </footer>
+    <script>
+        const buttonEl = document.querySelector('.button');
+        const popupEl = document.querySelector('.pop__up');
+
+        buttonEl.addEventListener('click', function (e) {
+            popupEl.classList.toggle('visible');
+        });
+    </script>
+</body>
+
+</html>
